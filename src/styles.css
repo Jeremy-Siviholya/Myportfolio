@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.toggle{
+    @apply flex justify-between relative w-[120px] h-[60px] rounded-[50px]
+}
+
+.toggle i{
+    line-height: 60px;
+    @apply text-center z-[1] w-[50%] text-[30px]
+}
+
+.toggle .ball{
+    @apply absolute w-[45px] h-[45px] rounded-[50px] m-[7.5px]
+}
+
+.light{
+    @apply bg-white
+}
+
+
+.light .toggle{
+    @apply bg-gradient-to-r from-slate-400 to-gray-200 shadow-sm
+}
+
+.light .toggle .bxs-sun{
+    @apply bg-white
+}
+
+.light .toggle .bx-moon{
+    @apply bg-[#151d2a]
+}
+
+.light .toggle .ball{
+   @apply bg-[#151d2a];
+}
+
+/* dark mode */
+
+
+.dark{
+    @apply bg-[#151d2a]
+
+}
+
+
+
+.dark .toggle{
+    @apply bg-[#3d547c]
+}
+
+.dark .toggle .bxs-sun{
+    @apply bg-white
+}
+
+.dark .toggle .bx-moon{
+    @apply bg-[#151d2a]
+}
+
+.dark .toggle .ball{
+    @apply bg-[#fafafa];
+    transform:translateX(60px)
+}
+
